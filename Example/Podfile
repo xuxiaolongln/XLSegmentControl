@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XLSegmentControl_Example' do
+  pod 'XLSegmentControl', :path => '../'
+
+  target 'XLSegmentControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
