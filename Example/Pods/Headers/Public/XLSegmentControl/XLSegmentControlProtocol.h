@@ -1,0 +1,1 @@
+../../../../../XLSegmentControl/Classes/Core/XLSegmentControlProtocol.h

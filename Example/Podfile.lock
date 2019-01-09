@@ -1,0 +1,16 @@
+PODS:
+  - XLSegmentControl (0.1.0)
+
+DEPENDENCIES:
+  - XLSegmentControl (from `../`)
+
+EXTERNAL SOURCES:
+  XLSegmentControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XLSegmentControl: 31cd56489176ad44ae9efc2af374e6137aa4b212
+
+PODFILE CHECKSUM: 138f84bb318e78b2a0331cd4b9bf4338d6a4f5d6
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3548132BE934502005874A0473B95ADF /* UIView+XLSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 0823A67E848522E8292ADE0A0A0C5BED /* UIView+XLSegment.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35D3C5ACCB63A3B78400BFA87C7F5305 /* XLSegmentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26182375D8A00E17743CBDA62C34FF /* XLSegmentHelper.m */; };
+		384D4C4DB78E4B979A2B971DBA06223D /* XLSegmentControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D6ACDA8FB73E8D442101ACCC97E0C2 /* XLSegmentControl-dummy.m */; };
+		5EBE4962F064EFA01F783A640EA56844 /* XLSegmentControlItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD4133DD7DDBFB71C84007FAFBBEFA9 /* XLSegmentControlItem.m */; };
+		721B818112CFBF42656D544D2CCEC2B9 /* XLSegmentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5B86B7E1FF8E30C4051701D5E9B6C0 /* XLSegmentHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F24752FCAAE628A730009A42EEA69BE /* XLSegmentScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F57AFFF850FC22057F2FCDBBA56A695 /* XLSegmentScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86ABF90C60DB46CD026B86D96F0856BB /* XLSegmentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA579E047432CFA3BE1AD36B635ABDE /* XLSegmentControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E51FE1787D2BBA57F59F7CED33EF095 /* UIView+XLSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9F26E1DC04881627C8FA09A9961407 /* UIView+XLSegment.m */; };
+		B4E20BED35249E0914DD2D1EF2D291E5 /* XLSegmentControlDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 576BA837494B88D6D70C7A623537FFE3 /* XLSegmentControlDef.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C39C6762E532CA492C4E79EF5D6CA847 /* XLSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D89119D0A1B09868610579DBA965A631 /* XLSegmentControl.m */; };
+		CB7D4091E19BFCDC37BCD3061A26C685 /* XLSegmentControlProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1EED267B33B228E0D2540FFBE3D9B4 /* XLSegmentControlProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D15236806499D17D3F59CD8B51B7182F /* XLSegmentControlItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C405A945747EFC64C82E8A73E8380CF0 /* XLSegmentControlItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3A0D49F148172DBE83F83529E38C3C6 /* XLSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FB5670547A61D429AB7176A46C74DE /* XLSegmentScrollView.m */; };
+		E39B16ADE9608723380839D2BE8DFB7E /* Pods-XLSegmentControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33678C5792591AB147595B543F4B4299 /* Pods-XLSegmentControl_Example-dummy.m */; };
+		ED05C887F41DD98979E28D16EB61FED5 /* Pods-XLSegmentControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 920B61E7B7139528EB0ECB7BC6F5C9D3 /* Pods-XLSegmentControl_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC16DC9F77B0B1F4FBC16A4DACD1D9AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 332FB7ED465FE249B351D078987D0EF6;
+			remoteInfo = "Pods-XLSegmentControl_Example";
+		};
+		C7CCE803002AE4C9E8F287E6FE023A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45258AB950BCBBA0344A690AA87190D7;
+			remoteInfo = XLSegmentControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0823A67E848522E8292ADE0A0A0C5BED /* UIView+XLSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+XLSegment.h"; sourceTree = "<group>"; };
+		08D6ACDA8FB73E8D442101ACCC97E0C2 /* XLSegmentControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLSegmentControl-dummy.m"; sourceTree = "<group>"; };
+		0E1EED267B33B228E0D2540FFBE3D9B4 /* XLSegmentControlProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XLSegmentControlProtocol.h; sourceTree = "<group>"; };
+		11791D88B6F534776A7485060BC55C13 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1F26182375D8A00E17743CBDA62C34FF /* XLSegmentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XLSegmentHelper.m; sourceTree = "<group>"; };
+		1F57AFFF850FC22057F2FCDBBA56A695 /* XLSegmentScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XLSegmentScrollView.h; sourceTree = "<group>"; };
+		3349906CB1EDDA831EAA77A84C51B928 /* Pods-XLSegmentControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLSegmentControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		33678C5792591AB147595B543F4B4299 /* Pods-XLSegmentControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XLSegmentControl_Example-dummy.m"; sourceTree = "<group>"; };
+		44CF42B6D9AE95FA1CAF161E504453F0 /* libXLSegmentControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libXLSegmentControl.a; path = libXLSegmentControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		576BA837494B88D6D70C7A623537FFE3 /* XLSegmentControlDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XLSegmentControlDef.h; sourceTree = "<group>"; };
+		5F97E92D1380AD6E9894C1F458616218 /* Pods-XLSegmentControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLSegmentControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		62ABB8748BB9A0697BA01A48B223F0BB /* Pods-XLSegmentControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLSegmentControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7D6B2ABB2C03B219A8CA8C932E316547 /* libPods-XLSegmentControl_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-XLSegmentControl_Tests.a"; path = "libPods-XLSegmentControl_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2E3BB7D34C2750B9F80A14F9E93F78 /* libPods-XLSegmentControl_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-XLSegmentControl_Example.a"; path = "libPods-XLSegmentControl_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B798FB236245A16AA0AA5E1155F2BC /* Pods-XLSegmentControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLSegmentControl_Example-resources.sh"; sourceTree = "<group>"; };
+		873E10485A1CE0CF58580EDD9DA2F820 /* XLSegmentControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLSegmentControl.xcconfig; sourceTree = "<group>"; };
+		920B61E7B7139528EB0ECB7BC6F5C9D3 /* Pods-XLSegmentControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XLSegmentControl_Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95FB5670547A61D429AB7176A46C74DE /* XLSegmentScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XLSegmentScrollView.m; sourceTree = "<group>"; };
+		96B3166A3B1854F915B3E36F1A43A2C8 /* Pods-XLSegmentControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLSegmentControl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A02A8B29F3373E0D6BA63B9F48323A02 /* XLSegmentControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLSegmentControl-prefix.pch"; sourceTree = "<group>"; };
+		A03A10CD2938E692C5A5757EAD125DEF /* Pods-XLSegmentControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLSegmentControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A092D364E77F18EA9094576F7064A9A2 /* Pods-XLSegmentControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XLSegmentControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A491622087B250DDA8C096B5589E8C55 /* Pods-XLSegmentControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLSegmentControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A8415DD205382B1C235FA85331DEE75D /* Pods-XLSegmentControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLSegmentControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1C5B9C33DEB916047AA49C87643B1B8 /* XLSegmentControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XLSegmentControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C405A945747EFC64C82E8A73E8380CF0 /* XLSegmentControlItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XLSegmentControlItem.h; sourceTree = "<group>"; };
+		C57D8F50D1C8356AE14A1F8FE7956A44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C6088B22883925BA9C0B4EF6568341E3 /* Pods-XLSegmentControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLSegmentControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC7AD47F731FBBF11DD8F1FC483AFE9F /* Pods-XLSegmentControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XLSegmentControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D89119D0A1B09868610579DBA965A631 /* XLSegmentControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLSegmentControl.m; path = XLSegmentControl/Classes/XLSegmentControl.m; sourceTree = "<group>"; };
+		DC5B86B7E1FF8E30C4051701D5E9B6C0 /* XLSegmentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XLSegmentHelper.h; sourceTree = "<group>"; };
+		DF0D582FC35D7AF9AA0ED6EAC093FC54 /* Pods-XLSegmentControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLSegmentControl_Tests-resources.sh"; sourceTree = "<group>"; };
+		DFD4133DD7DDBFB71C84007FAFBBEFA9 /* XLSegmentControlItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XLSegmentControlItem.m; sourceTree = "<group>"; };
+		EA9F26E1DC04881627C8FA09A9961407 /* UIView+XLSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLSegment.m"; sourceTree = "<group>"; };
+		ECA579E047432CFA3BE1AD36B635ABDE /* XLSegmentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLSegmentControl.h; path = XLSegmentControl/Classes/XLSegmentControl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CEBF158C92AF7E848431EDCFA936F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6300E4E84D308A49930C547B2B30E74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E081B2BB50DF85E19B113FC916C3E40F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1818D19AB47CB20E6F661AF7D0C4CD67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F2E3BB7D34C2750B9F80A14F9E93F78 /* libPods-XLSegmentControl_Example.a */,
+				7D6B2ABB2C03B219A8CA8C932E316547 /* libPods-XLSegmentControl_Tests.a */,
+				44CF42B6D9AE95FA1CAF161E504453F0 /* libXLSegmentControl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FF8495BC7BECD62ACE3F310F0EDAF86 /* Pods-XLSegmentControl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7AD47F731FBBF11DD8F1FC483AFE9F /* Pods-XLSegmentControl_Tests-acknowledgements.markdown */,
+				5F97E92D1380AD6E9894C1F458616218 /* Pods-XLSegmentControl_Tests-acknowledgements.plist */,
+				920B61E7B7139528EB0ECB7BC6F5C9D3 /* Pods-XLSegmentControl_Tests-dummy.m */,
+				A491622087B250DDA8C096B5589E8C55 /* Pods-XLSegmentControl_Tests-frameworks.sh */,
+				DF0D582FC35D7AF9AA0ED6EAC093FC54 /* Pods-XLSegmentControl_Tests-resources.sh */,
+				C6088B22883925BA9C0B4EF6568341E3 /* Pods-XLSegmentControl_Tests.debug.xcconfig */,
+				A03A10CD2938E692C5A5757EAD125DEF /* Pods-XLSegmentControl_Tests.release.xcconfig */,
+			);
+			name = "Pods-XLSegmentControl_Tests";
+			path = "Target Support Files/Pods-XLSegmentControl_Tests";
+			sourceTree = "<group>";
+		};
+		3154C1B82CA208E83D0A18C3D3BD8E3F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B91E75536946E67B648EB309ABDD8A62 /* Pods-XLSegmentControl_Example */,
+				2FF8495BC7BECD62ACE3F310F0EDAF86 /* Pods-XLSegmentControl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4330623A0441F2CE1F9CECBFE3ECBD03 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				11791D88B6F534776A7485060BC55C13 /* LICENSE */,
+				C57D8F50D1C8356AE14A1F8FE7956A44 /* README.md */,
+				B1C5B9C33DEB916047AA49C87643B1B8 /* XLSegmentControl.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		45215951801D8E89327327AD2C181465 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0823A67E848522E8292ADE0A0A0C5BED /* UIView+XLSegment.h */,
+				EA9F26E1DC04881627C8FA09A9961407 /* UIView+XLSegment.m */,
+				576BA837494B88D6D70C7A623537FFE3 /* XLSegmentControlDef.h */,
+				C405A945747EFC64C82E8A73E8380CF0 /* XLSegmentControlItem.h */,
+				DFD4133DD7DDBFB71C84007FAFBBEFA9 /* XLSegmentControlItem.m */,
+				0E1EED267B33B228E0D2540FFBE3D9B4 /* XLSegmentControlProtocol.h */,
+				DC5B86B7E1FF8E30C4051701D5E9B6C0 /* XLSegmentHelper.h */,
+				1F26182375D8A00E17743CBDA62C34FF /* XLSegmentHelper.m */,
+				1F57AFFF850FC22057F2FCDBBA56A695 /* XLSegmentScrollView.h */,
+				95FB5670547A61D429AB7176A46C74DE /* XLSegmentScrollView.m */,
+			);
+			name = Core;
+			path = XLSegmentControl/Classes/Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A73F7ED845A8A3B21B0346C560E52EBE /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				1818D19AB47CB20E6F661AF7D0C4CD67 /* Products */,
+				3154C1B82CA208E83D0A18C3D3BD8E3F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A73F7ED845A8A3B21B0346C560E52EBE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB95EA28B025A95B0E721474849CBEE3 /* XLSegmentControl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B91E75536946E67B648EB309ABDD8A62 /* Pods-XLSegmentControl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A092D364E77F18EA9094576F7064A9A2 /* Pods-XLSegmentControl_Example-acknowledgements.markdown */,
+				A8415DD205382B1C235FA85331DEE75D /* Pods-XLSegmentControl_Example-acknowledgements.plist */,
+				33678C5792591AB147595B543F4B4299 /* Pods-XLSegmentControl_Example-dummy.m */,
+				96B3166A3B1854F915B3E36F1A43A2C8 /* Pods-XLSegmentControl_Example-frameworks.sh */,
+				81B798FB236245A16AA0AA5E1155F2BC /* Pods-XLSegmentControl_Example-resources.sh */,
+				62ABB8748BB9A0697BA01A48B223F0BB /* Pods-XLSegmentControl_Example.debug.xcconfig */,
+				3349906CB1EDDA831EAA77A84C51B928 /* Pods-XLSegmentControl_Example.release.xcconfig */,
+			);
+			name = "Pods-XLSegmentControl_Example";
+			path = "Target Support Files/Pods-XLSegmentControl_Example";
+			sourceTree = "<group>";
+		};
+		EB95EA28B025A95B0E721474849CBEE3 /* XLSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				ECA579E047432CFA3BE1AD36B635ABDE /* XLSegmentControl.h */,
+				D89119D0A1B09868610579DBA965A631 /* XLSegmentControl.m */,
+				45215951801D8E89327327AD2C181465 /* Core */,
+				4330623A0441F2CE1F9CECBFE3ECBD03 /* Pod */,
+				EDC50BF3C044007B288EE4B846B2E5F3 /* Support Files */,
+			);
+			name = XLSegmentControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EDC50BF3C044007B288EE4B846B2E5F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				873E10485A1CE0CF58580EDD9DA2F820 /* XLSegmentControl.xcconfig */,
+				08D6ACDA8FB73E8D442101ACCC97E0C2 /* XLSegmentControl-dummy.m */,
+				A02A8B29F3373E0D6BA63B9F48323A02 /* XLSegmentControl-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XLSegmentControl";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4102779EED748003A6BB6D3390A171FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7907555B75063A2FF1D4EC529B5BD4F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3548132BE934502005874A0473B95ADF /* UIView+XLSegment.h in Headers */,
+				86ABF90C60DB46CD026B86D96F0856BB /* XLSegmentControl.h in Headers */,
+				B4E20BED35249E0914DD2D1EF2D291E5 /* XLSegmentControlDef.h in Headers */,
+				D15236806499D17D3F59CD8B51B7182F /* XLSegmentControlItem.h in Headers */,
+				CB7D4091E19BFCDC37BCD3061A26C685 /* XLSegmentControlProtocol.h in Headers */,
+				721B818112CFBF42656D544D2CCEC2B9 /* XLSegmentHelper.h in Headers */,
+				7F24752FCAAE628A730009A42EEA69BE /* XLSegmentScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8184FD486A2B401EFADD41A8C71F680B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		332FB7ED465FE249B351D078987D0EF6 /* Pods-XLSegmentControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74F5FFF3997673CD5CD0AA2A5991FCC /* Build configuration list for PBXNativeTarget "Pods-XLSegmentControl_Example" */;
+			buildPhases = (
+				8184FD486A2B401EFADD41A8C71F680B /* Headers */,
+				0567A3B61F485ED51939D9F695AF913B /* Sources */,
+				0CEBF158C92AF7E848431EDCFA936F2D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A608F461AFFFF4B3ED00183ED4FDF456 /* PBXTargetDependency */,
+			);
+			name = "Pods-XLSegmentControl_Example";
+			productName = "Pods-XLSegmentControl_Example";
+			productReference = 7F2E3BB7D34C2750B9F80A14F9E93F78 /* libPods-XLSegmentControl_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		45258AB950BCBBA0344A690AA87190D7 /* XLSegmentControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5090F3DC590A83191C3C7827CE587CB /* Build configuration list for PBXNativeTarget "XLSegmentControl" */;
+			buildPhases = (
+				7907555B75063A2FF1D4EC529B5BD4F1 /* Headers */,
+				16D45DC54CCA263B7188670823E8D868 /* Sources */,
+				6300E4E84D308A49930C547B2B30E74A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLSegmentControl;
+			productName = XLSegmentControl;
+			productReference = 44CF42B6D9AE95FA1CAF161E504453F0 /* libXLSegmentControl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EABB3EB776DE2208087B579E2EE211D1 /* Pods-XLSegmentControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F542BB87BAF2C3F27CD7943C0C4D89F /* Build configuration list for PBXNativeTarget "Pods-XLSegmentControl_Tests" */;
+			buildPhases = (
+				4102779EED748003A6BB6D3390A171FD /* Headers */,
+				0F6D372CE78F874489790BC981529E6B /* Sources */,
+				E081B2BB50DF85E19B113FC916C3E40F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A304CEF9110CA5CBB078AADF807FDE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-XLSegmentControl_Tests";
+			productName = "Pods-XLSegmentControl_Tests";
+			productReference = 7D6B2ABB2C03B219A8CA8C932E316547 /* libPods-XLSegmentControl_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1818D19AB47CB20E6F661AF7D0C4CD67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				332FB7ED465FE249B351D078987D0EF6 /* Pods-XLSegmentControl_Example */,
+				EABB3EB776DE2208087B579E2EE211D1 /* Pods-XLSegmentControl_Tests */,
+				45258AB950BCBBA0344A690AA87190D7 /* XLSegmentControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0567A3B61F485ED51939D9F695AF913B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39B16ADE9608723380839D2BE8DFB7E /* Pods-XLSegmentControl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F6D372CE78F874489790BC981529E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED05C887F41DD98979E28D16EB61FED5 /* Pods-XLSegmentControl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D45DC54CCA263B7188670823E8D868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E51FE1787D2BBA57F59F7CED33EF095 /* UIView+XLSegment.m in Sources */,
+				384D4C4DB78E4B979A2B971DBA06223D /* XLSegmentControl-dummy.m in Sources */,
+				C39C6762E532CA492C4E79EF5D6CA847 /* XLSegmentControl.m in Sources */,
+				5EBE4962F064EFA01F783A640EA56844 /* XLSegmentControlItem.m in Sources */,
+				35D3C5ACCB63A3B78400BFA87C7F5305 /* XLSegmentHelper.m in Sources */,
+				D3A0D49F148172DBE83F83529E38C3C6 /* XLSegmentScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A304CEF9110CA5CBB078AADF807FDE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XLSegmentControl_Example";
+			target = 332FB7ED465FE249B351D078987D0EF6 /* Pods-XLSegmentControl_Example */;
+			targetProxy = BC16DC9F77B0B1F4FBC16A4DACD1D9AE /* PBXContainerItemProxy */;
+		};
+		A608F461AFFFF4B3ED00183ED4FDF456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLSegmentControl;
+			target = 45258AB950BCBBA0344A690AA87190D7 /* XLSegmentControl */;
+			targetProxy = C7CCE803002AE4C9E8F287E6FE023A20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		093905B415258757407138ACA54D0812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E10485A1CE0CF58580EDD9DA2F820 /* XLSegmentControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/XLSegmentControl/XLSegmentControl-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = XLSegmentControl;
+				PRODUCT_NAME = XLSegmentControl;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276E2450624381978F1C76BD260113C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3349906CB1EDDA831EAA77A84C51B928 /* Pods-XLSegmentControl_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		530474F5DB72145C07E32F24BB67336A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03A10CD2938E692C5A5757EAD125DEF /* Pods-XLSegmentControl_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E1CA92B63621C5AA6D97D8415B8E99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62ABB8748BB9A0697BA01A48B223F0BB /* Pods-XLSegmentControl_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F459C1FC80E7BD95B3895680B3D693AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6088B22883925BA9C0B4EF6568341E3 /* Pods-XLSegmentControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC8D0D68F8C6617E2187443A270C5A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E10485A1CE0CF58580EDD9DA2F820 /* XLSegmentControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/XLSegmentControl/XLSegmentControl-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = XLSegmentControl;
+				PRODUCT_NAME = XLSegmentControl;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F542BB87BAF2C3F27CD7943C0C4D89F /* Build configuration list for PBXNativeTarget "Pods-XLSegmentControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F459C1FC80E7BD95B3895680B3D693AE /* Debug */,
+				530474F5DB72145C07E32F24BB67336A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5090F3DC590A83191C3C7827CE587CB /* Build configuration list for PBXNativeTarget "XLSegmentControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8D0D68F8C6617E2187443A270C5A8E /* Debug */,
+				093905B415258757407138ACA54D0812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74F5FFF3997673CD5CD0AA2A5991FCC /* Build configuration list for PBXNativeTarget "Pods-XLSegmentControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1CA92B63621C5AA6D97D8415B8E99D /* Debug */,
+				276E2450624381978F1C76BD260113C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
