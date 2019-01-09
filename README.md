@@ -22,7 +22,7 @@ pod 'XLSegmentControl'
 
 ## Author
 
-xxl379786230, xuxiaolong3@yiche.com
+xuxiaolong, xuxiaolongln@gmail.com
 
 ## License
 
