@@ -9,10 +9,10 @@
 仿微博、陌陌、今日头条等多种样式的自定义Segment，集成简单。
 
 ## 效果预览
-![avatar](XLSegmentControl/images/1.gif)
-![avatar](XLSegmentControl/images/2.gif)
-![avatar](XLSegmentControl/images/3.gif)
-![avatar](XLSegmentControl/images/4.gif)
+![avatar](Example/XLSegmentControl/images/1.gif)
+![avatar](Example/XLSegmentControl/images/2.gif)
+![avatar](Example/XLSegmentControl/images/3.gif)
+![avatar](Example/XLSegmentControl/images/4.gif)
 
 ## 示例代码
 ### 定义XLSegmentControl
@@ -47,7 +47,7 @@ forState:UIControlStateSelected];
 return _segment;
 }
 ```
-- Segment支持两种文字展示风格，对应的属性为<font color="#dd0000">widthStyle</font><br /> 
+- #### Segment支持两种文字展示风格，对应的属性为<font color="#dd0000">widthStyle</font><br /> 
 ```
 ///文字展示风格
 typedef NS_ENUM(NSUInteger, XLSegmentedControlWidthStyle) {
@@ -55,7 +55,7 @@ XLSegmentedControlWidthStyleFixed,    // 平均分割
 XLSegmentedControlWidthStyleDynamic,  // 同字体宽度
 };
 ```
-- 目前同时支持三种indicator样式，对应的属性为<font color="#dd0000">indicatorWidthStyle</font><br /> 
+- #### 目前同时支持三种indicator样式，对应的属性为<font color="#dd0000">indicatorWidthStyle</font><br /> 
 ```
 /// 底部指示器风格
 typedef  NS_ENUM(NSUInteger,XLSegmentControlIndicatorWidthStyle){
@@ -64,7 +64,7 @@ XLSegmentControlIndicatorWidthStyleShort,       //自定义宽度
 XLSegmentControlIndicatorWidthStyleBackground   //背景
 };
 ```
-- Segment支持字体和color动画，只要设置<font color="#dd0000">UIControlStateNormal</font> 和<font color="#dd0000">UIControlStateSelected</font>两种不同状态下的字体大小和颜色，同时设置textAnimate=YES，就能看到完整的动画效果，如下:
+- #### Segment支持字体和color动画，只要设置<font color="#dd0000">UIControlStateNormal</font> 和<font color="#dd0000">UIControlStateSelected</font>两种不同状态下的字体大小和颜色，同时设置textAnimate=YES，就能看到完整的动画效果，如下:
 ```
 _segment.showBottomShadow = YES;
 [_segment setTextAttributes:@{NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Regular" size:16],
@@ -76,13 +76,13 @@ NSForegroundColorAttributeName:[UIColor redColor]
 }
 forState:UIControlStateSelected];
 ```
-- segment的indicator也支持类似陌陌、QQ那种黏性红点的动画，只要设置最大宽度和最小宽度，就可实现。如下：
+- #### segment的indicator也支持类似陌陌、QQ那种黏性红点的动画，只要设置最大宽度和最小宽度，就可实现。如下：
 ```
 _segment.indicatorMinWidth = 24;
 _segment.indicatorMaxWidth = 50;
 _segment.indicatorHeight = 6;
 ```
-- segment支持动态添加或者删除item：
+- #### segment支持动态添加或者删除item：
 ```
 /** 插入标题 */
 - (void)insertTitle:(NSString *)title atIndex:(NSUInteger)index;
@@ -93,7 +93,7 @@ _segment.indicatorHeight = 6;
 ```
 
 ### 注意
-- 如果需要在Segment上添加角标，可以通过DataSource来设置：
+- #### 如果需要在Segment上添加角标，可以通过DataSource来设置：
 ```
 /** 为指定的item添加角标 */
 - (UIView *)segmentControl:(id<XLSegmentControlProtocol>)segmentControl bageViewAtIndex:(NSInteger)index;
@@ -102,7 +102,7 @@ _segment.indicatorHeight = 6;
 /** 每个角标相对于文字的位置,默认为(1,0) 即bageView的左下角对应文字右上角，范围0~1*/
 - (CGPoint)segmentControl:(id<XLSegmentControlProtocol>)segmentControl bagePointAtIndex:(NSInteger)index;
 ```
-- 由于Segment需要与scrollView联动，所以必须实现下面三种方法：
+- #### 由于Segment需要与scrollView联动，所以必须实现下面三种方法：
 ```
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 [_segment segmentControlDidScroll:scrollView];
@@ -116,7 +116,7 @@ _segment.indicatorHeight = 6;
 [_segment segmentControlDidEndScrollingAnimation:scrollView];
 }
 ```
-- 最最重要的一点，由于当前Segment默认是从最左侧开始排列的，如果想要Segment居中显示，可以获取Segment的实际宽度，重新设置即可,在调用segmentTotalWidth获取实际宽度之前，要保证所有的属性都设置完毕，以免宽度计算不准确：
+- #### 最最重要的一点，由于当前Segment默认是从最左侧开始排列的，如果想要Segment居中显示，可以获取Segment的实际宽度，重新设置即可,在调用segmentTotalWidth获取实际宽度之前，要保证所有的属性都设置完毕，以免宽度计算不准确：
 ```
 CGFloat segmentH = self.segment.segmentTotalWidth;
 CGFloat x = (self.view.frame.size.width - segmentH) / 2;
