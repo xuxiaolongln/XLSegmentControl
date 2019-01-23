@@ -718,7 +718,7 @@ typedef XLSegmentControlItem Item;
         }
         totalW += minSize.width;
     }
-    totalW = totalW - minW + maxW + (_segmentEdgeInset.left + _segmentEdgeInset.right) * 2 + _horizontalPadding * (self.titles.count - 1);
+    totalW = totalW - minW + maxW + (_segmentEdgeInset.left + _segmentEdgeInset.right) + _horizontalPadding * (self.titles.count - 1);
     return totalW;
 }
 

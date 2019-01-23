@@ -43,6 +43,11 @@
     [_bgView addSubview:imageView2];
     
     _bgView.contentSize = CGSizeMake(self.view.frame.size.width * 3, 200);
+    
+    CGFloat segmentH = self.segment.segmentTotalWidth;
+    CGFloat x = (self.view.frame.size.width - segmentH) / 2;
+    self.segment.frame = CGRectMake(x, 44, segmentH, 60);
+
 }
 
 - (XLSegmentControl *)segment{
@@ -65,12 +70,10 @@
                                       NSForegroundColorAttributeName: [UIColor blackColor]
                                       }
                            forState:UIControlStateNormal];
-        [_segment setTextAttributes:@{NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Semibold" size:24],
+        [_segment setTextAttributes:@{NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Semibold" size:20],
                                       NSForegroundColorAttributeName:[UIColor redColor]
                                       }
                            forState:UIControlStateSelected];
-        _segment.indicatorHeight = 6;
-        _segment.indicatorMinWidth = 24;
         
         [_segment addTarget:self action:@selector(segmentChange:) forControlEvents:UIControlEventValueChanged];
     }

@@ -24,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
                                                    fontSize:(CGFloat)fontSize
                                                       color:(UIColor *)color
                                                        text:(NSString *)text;
-
 /** 将UIColor转换成RGBColor */
 + (void)getRGBComponents:(CGFloat [3])components
                 forColor:(UIColor *)color;

@@ -10,8 +10,8 @@
 
 /// 底部指示器风格
 typedef  NS_ENUM(NSUInteger,XLSegmentControlIndicatorWidthStyle){
-    XLSegmentControlIndicatorWidthStyleText,    //和文字宽度相同
-    XLSegmentControlIndicatorWidthStyleShort,   //自定义宽度
+    XLSegmentControlIndicatorWidthStyleText,        //和文字宽度相同
+    XLSegmentControlIndicatorWidthStyleShort,       //自定义宽度
     XLSegmentControlIndicatorWidthStyleBackground   //背景
 };
 
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, XLSegmentedControlWidthStyle) {
 ///文字位置
 typedef NS_ENUM(NSUInteger, XLSegmentedControlTextPosition) {
     XLSegmentedControlTextPositionMiddle,    // 垂直居中
-    XLSegmentedControlTextPositionBottom,     // 底部对齐
+    XLSegmentedControlTextPositionBottom,    // 底部对齐
 };
 
 

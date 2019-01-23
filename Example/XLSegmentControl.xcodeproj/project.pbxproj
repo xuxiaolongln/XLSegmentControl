@@ -24,6 +24,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AE407D1621F7194D00577BDC /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE407D1221F7194D00577BDC /* 1.gif */; };
+		AE407D1721F7194D00577BDC /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE407D1321F7194D00577BDC /* 2.gif */; };
+		AE407D1821F7194D00577BDC /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE407D1421F7194D00577BDC /* 3.gif */; };
+		AE407D1921F7194D00577BDC /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE407D1521F7194D00577BDC /* 4.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77FBB2D0CBB7071718DFD640 /* Pods-XLSegmentControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLSegmentControl_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLSegmentControl_Tests/Pods-XLSegmentControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE407D1221F7194D00577BDC /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		AE407D1321F7194D00577BDC /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		AE407D1421F7194D00577BDC /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
+		AE407D1521F7194D00577BDC /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
 		B82C9169B9CD645CEEEB2070 /* libPods-XLSegmentControl_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLSegmentControl_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61DF629E0C2E59DDD6F6655 /* Pods-XLSegmentControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLSegmentControl_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLSegmentControl_Tests/Pods-XLSegmentControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +140,7 @@
 		6003F593195388D20070C39A /* Example for XLSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				AE407D1121F7194D00577BDC /* images */,
 				6003F59C195388D20070C39A /* XLAppDelegate.h */,
 				6003F59D195388D20070C39A /* XLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +192,17 @@
 				4555629261B54A288399A36E /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AE407D1121F7194D00577BDC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AE407D1221F7194D00577BDC /* 1.gif */,
+				AE407D1321F7194D00577BDC /* 2.gif */,
+				AE407D1421F7194D00577BDC /* 3.gif */,
+				AE407D1521F7194D00577BDC /* 4.gif */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		D0811D79D9289C57BE089460 /* Pods */ = {
@@ -246,6 +266,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xxl379786230;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 48E2PTA55Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -278,6 +301,10 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				AE407D1821F7194D00577BDC /* 3.gif in Resources */,
+				AE407D1721F7194D00577BDC /* 2.gif in Resources */,
+				AE407D1921F7194D00577BDC /* 4.gif in Resources */,
+				AE407D1621F7194D00577BDC /* 1.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +501,7 @@
 			baseConfigurationReference = 10AD5F131AF86AA35B3711C7 /* Pods-XLSegmentControl_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48E2PTA55Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XLSegmentControl/XLSegmentControl-Prefix.pch";
 				INFOPLIST_FILE = "XLSegmentControl/XLSegmentControl-Info.plist";
@@ -489,6 +517,7 @@
 			baseConfigurationReference = 319F0D58ADE1BC32FE29EB68 /* Pods-XLSegmentControl_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48E2PTA55Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XLSegmentControl/XLSegmentControl-Prefix.pch";
 				INFOPLIST_FILE = "XLSegmentControl/XLSegmentControl-Info.plist";

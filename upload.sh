@@ -49,6 +49,6 @@ git commit -m $description
 git tag $version
 git push
 git push --tags
-pod repo push master --allow-warnings --use-libraries
+pod trunk push --allow-warnings
 say "finished"
 echo "finished"
