@@ -82,4 +82,11 @@
     dispatch_resume(timer);
     return timer;
 }
+
++ (NSDictionary *)changeAttributedColorWithAtt:(NSDictionary *)attr color:(UIColor *)color{
+    NSMutableDictionary *mAttributes = [NSMutableDictionary dictionaryWithDictionary:attr];
+    mAttributes[NSForegroundColorAttributeName] = color;
+    return mAttributes.copy;
+}
+
 @end

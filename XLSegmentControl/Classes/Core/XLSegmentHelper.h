@@ -32,6 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (dispatch_source_t)animateWithDuration:(NSTimeInterval)duration
                               animations:(void(^)(NSTimeInterval timeout))animations
                               completion:(void(^)(BOOL finished))completion;
+
+/** 改变富文本子体颜色 */
++ (NSDictionary *)changeAttributedColorWithAtt:(NSDictionary *)attr color:(UIColor *)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

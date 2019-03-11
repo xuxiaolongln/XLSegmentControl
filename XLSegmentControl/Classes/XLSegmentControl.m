@@ -330,6 +330,7 @@ typedef XLSegmentControlItem Item;
     
     if (self.indicator.superview == nil && self.showsIndicator) {
         [self.container addSubview:self.indicator];
+        [self.container sendSubviewToBack:self.indicator];
     }
 }
 
@@ -613,6 +614,10 @@ typedef XLSegmentControlItem Item;
         item.label.textColor = targetColor;
     }
     _indicator.backgroundColor = targetColor;
+    
+    //更新当前attr的颜色
+    self.attributesSelected = [XLSegmentHelper changeAttributedColorWithAtt:self.attributesSelected color:targetColor];
+    self.attributesNormal = [XLSegmentHelper changeAttributedColorWithAtt:self.attributesNormal color:targetColor];
 }
 
 - (void)setSelectedSegmentIndex:(NSUInteger)selectedSegmentIndex animation:(BOOL)animation {
