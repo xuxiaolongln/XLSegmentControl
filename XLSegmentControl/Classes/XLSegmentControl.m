@@ -14,7 +14,12 @@
 
 typedef XLSegmentControlItem Item;
 @interface XLSegmentControl ()<UIScrollViewDelegate>{
-    dispatch_source_t _timer;
+    CADisplayLink *_displayLink;//定时器
+    NSUInteger _fromIndex;      //起始index
+    NSUInteger _toIndex;        //目标index
+    NSTimeInterval _timeout;    //定时器变化时间
+    BOOL _isAnimation;          //当前Segment是否正在执行动画
+    NSTimeInterval _animationTimeRemain;   //动画剩余时间
 }
 @property(nonatomic, strong)XLSegmentScrollView *container;
 @property (nonatomic, strong, readwrite) UIView *indicator;
@@ -37,10 +42,6 @@ typedef XLSegmentControlItem Item;
 @property(nonatomic, weak)id<XLSegmentControlDataSource> dataSource;
 /** 标题到底部的距离 */
 @property(nonatomic, assign)CGFloat titleBottomMargin;
-/** 当前Segment是否正在执行动画 */
-@property(nonatomic, assign)BOOL isAnimation;
-/** 动画剩余时间 */
-@property(nonatomic, assign)NSTimeInterval animationTimeout;
 
 @end
 
@@ -90,6 +91,13 @@ typedef XLSegmentControlItem Item;
     [self _updateIndicatorFrame];
     [self _updateShadow];
     [self _updateAttribute];
+}
+
+- (void)dealloc{
+    if (_displayLink) {
+        [_displayLink invalidate];
+        _displayLink = nil;
+    }
 }
 
 #pragma mark - Private
@@ -391,29 +399,40 @@ typedef XLSegmentControlItem Item;
 #pragma mark -------------- Animation --------------
 - (void)_textAnimationFromIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex {
     if (!self) return;
-    __block UILabel *leftLabel = toIndex > fromIndex ? self.items[fromIndex].label : self.items[toIndex].label;
-    __block UILabel *rightLabel = toIndex > fromIndex ? self.items[toIndex].label : self.items[fromIndex].label;
-    int index = toIndex > fromIndex ? (int)fromIndex : (int)toIndex;
-    NSTimeInterval duration = 0.25;
-    __weak typeof(self) weakSelf = self;
-    self.isAnimation = YES;
+    _fromIndex = fromIndex;
+    _toIndex = toIndex;
+    if (_displayLink) {
+        [_displayLink invalidate];
+    }
+    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(_textAnimation)];
+    [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+- (void)_textAnimation{
+    if (!self) return;
+    __block UILabel *leftLabel = _toIndex > _fromIndex ? self.items[_fromIndex].label : self.items[_toIndex].label;
+    __block UILabel *rightLabel = _toIndex > _fromIndex ? self.items[_toIndex].label : self.items[_fromIndex].label;
+    int index = _toIndex > _fromIndex ? (int)_fromIndex : (int)_toIndex;
+    _isAnimation = YES;
     self.userInteractionEnabled = NO;
-    _timer = [XLSegmentHelper animateWithDuration:duration animations:^(NSTimeInterval timeout) {
-        __strong typeof(weakSelf) self = weakSelf;
-        self.animationTimeout = timeout;
-        NSTimeInterval tempTime = toIndex > fromIndex ? (duration - timeout) : timeout;
-        float leftScaleValue = self.maxFontSize - (self.maxFontSize - self.minFontSize) / duration * tempTime;
-        float rightScaleValue = self.minFontSize + (self.maxFontSize - self.minFontSize) / duration * tempTime;
-        float leftColorValue = toIndex > fromIndex ? (1 - timeout / duration) : timeout / duration;
-        //根据偏移量来设置动画
-        [self _updateFontAndColorWithLeftLabel:leftLabel leftFontScale:leftScaleValue rightLabel:rightLabel rightFontScale:rightScaleValue colorScale:leftColorValue toIndex:index scrollToLeft:toIndex > fromIndex];
-    } completion:^(BOOL finished) {
-        __strong typeof(weakSelf) self = weakSelf;
+    NSTimeInterval duration = 0.15;
+    _timeout += duration / 20;
+    _animationTimeRemain = duration - _timeout;
+    NSTimeInterval tempTime = _toIndex > _fromIndex ? _timeout : (duration - _timeout);
+    float leftScaleValue = self.maxFontSize - (self.maxFontSize - self.minFontSize) / duration * tempTime;
+    float rightScaleValue = self.minFontSize + (self.maxFontSize - self.minFontSize) / duration * tempTime;
+    float leftColorValue = _toIndex < _fromIndex ? (1 - _timeout / duration) : _timeout / duration;
+    //根据偏移量来设置动画
+    [self _updateFontAndColorWithLeftLabel:leftLabel leftFontScale:leftScaleValue rightLabel:rightLabel rightFontScale:rightScaleValue colorScale:leftColorValue toIndex:index scrollToLeft:_toIndex > _fromIndex];
+    if (_timeout >= duration) {
+        _timeout = 0;
+        [_displayLink invalidate];
+        _displayLink = nil;
         self.isChangeByClick = NO;
-        self.isAnimation = NO;
+        _isAnimation = NO;
         self.userInteractionEnabled = YES;
         [self _scrollToSelectedSegmentIndex];
-    }];
+    }
 }
 
 - (void)_updateFontAndColorWithLeftLabel:(UILabel *)leftLabel
@@ -574,8 +593,8 @@ typedef XLSegmentControlItem Item;
 - (void)reloadData {
     //延迟调用，为了解决segment错乱问题
     self.userInteractionEnabled = NO;
-    !self.isAnimation?:dispatch_source_cancel(_timer);
-    !self.isAnimation? [self _delayReloadData] : [self performSelector:@selector(_delayReloadData) withObject:nil afterDelay:self.animationTimeout];
+    !_isAnimation?:[_displayLink invalidate];
+    !_isAnimation? [self _delayReloadData] : [self performSelector:@selector(_delayReloadData) withObject:nil afterDelay:_animationTimeRemain];
 }
 
 - (void)insertTitle:(nonnull NSString *)title atIndex:(NSUInteger)index {
